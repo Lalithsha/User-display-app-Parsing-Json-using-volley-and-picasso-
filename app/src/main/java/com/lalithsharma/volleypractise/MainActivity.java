@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
                     JSONArray jsonArray = response.getJSONArray("results");
 
-
+                    // 0 because we need the data for the first object insider the json array
                     JSONObject mainResultArray  = jsonArray.getJSONObject(0);
                     String gender = mainResultArray.getString("gender");
                     gen.append("Gender: "+gender);
